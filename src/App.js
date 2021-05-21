@@ -2,10 +2,13 @@ import React from 'react';
 import './App.css';
 import Button from './Button';
 import Product from "./Product";
+import Tile from "./Tile";
 import bag1 from './assets/bag_1.png'
 import bag2 from './assets/bag_2.png'
 import bag3 from './assets/bag_3.png'
 import bag4 from './assets/bag_4.png'
+import our_story from './assets/our_story.png'
+import brand from './assets/brand.png'
 
 function App() {
     return (
@@ -59,6 +62,30 @@ function App() {
                     />
                 </article>
             </main>
+            <footer>
+                <section>
+                    <Tile
+                        title={"The brand"}
+                        textArea={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque expedita mollitia, pariatur provident repellat velit. Corporis culpa rem repellat repudiandae."}
+                    />
+                </section>
+                <section>
+                    <Tile
+                        imageFooter={brand}
+                    />
+                </section>
+                <section>
+                    <Tile
+                        imageFooter={our_story}
+                    />
+                </section>
+                <section>
+                    <Tile
+                        title={"Our story"}
+                        textArea={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque expedita mollitia, pariatur provident repellat velit. Corporis culpa rem repellat repudiandae."}
+                    />
+                </section>
+            </footer>
         </>
     );
 }
